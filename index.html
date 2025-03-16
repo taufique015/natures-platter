@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <link href="//cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/fc959ffc7a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
@@ -65,9 +66,9 @@
 </head>
 <body class="font-sora">
     <header class="bg-gradient-to-b from-white to-secondary">
-      <nav class="flex justify-between items-center w-8/12 h-[100px] m-auto">
+      <nav class="flex justify-between items-center w-2/3 h-[100px] m-auto">
         <img src="assets/logo-header.png" alt="nature's-platter">
-        <ul class="flex flex-row ml-[200px] gap-8">
+        <ul class="flex flex-row cursor-pointer ml-[200px] gap-8">
           <li>Product</li>
           <li>Services</li>
           <li>Contact us</li>
@@ -83,14 +84,14 @@
           <button class="bg-accent text-white rounded-lg text-lg px-[30px] py-2.5">Register</button>
         </div>
       </nav>
-      <section class="flex flex-col text-center overflow-hidden w-8/12 m-auto mt-[90px] gap-8">
+      <section class="flex flex-col text-center overflow-hidden w-2/3 m-auto mt-[90px] gap-8">
         <h1 class="text-[56px] font-semibold">Freshness <span class="text-accent">You Can<br>Count</span> On, Prices You’ll Love!</h1>
         <p class="text-[20px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br>staples, we’ve got you covered every day!</p>
         <img class="animate-appear w-full h-full" src="assets/hero-vegetables.png" alt="hero-vegetables">
       </section>
     </header>
     <main>
-      <section class="bg-white w-8/12 m-auto my-[140px]">
+      <section class="bg-white w-2/3 m-auto my-[140px]">
         <h2 class="font-semibold text-accent text-4xl mb-12">Services</h2>
         <div class="flex gap-6">
           <div class="card bg-secondary">
@@ -117,7 +118,7 @@
         </div>
       </section>
       <section class="bg-secondary">
-        <div class=" w-8/12 m-auto py-[140px]">
+        <div class=" w-2/3 m-auto py-[140px]">
           <h2 class="font-semibold text-accent text-4xl mb-12">Popular Products</h2>
           <div class="flex justify-between gap-5">
             <div class="relative bg-gradient-to-br from-linear_gradient to-green-100 w-[35%] h-96 rounded-[10px] px-8 pt-[50px]">
@@ -236,9 +237,9 @@
           </div>
         </div>
       </section>
-      <section class="w-8/12 m-auto my-[140px]">
+      <section class="w-2/3 m-auto py-[140px]">
         <h2 class="font-semibold text-accent text-4xl">Arrival & Offers</h2>
-        <div class="flex justify-between gap-6 h-[346px] my-12">
+        <div class="flex justify-between gap-6 h-[346px] mt-12">
           <div class="relative flex bg-arrival_bg_1 rounded-3xl p-10 w-7/12">
             <div class="flex flex-col gap-7">
               <img src="assets/dawat-logo.png" alt="dawat-logo">
@@ -257,27 +258,62 @@
           </div>
         </div>
       </section>
+      <section class="bg-secondary">
+        <div class="w-2/3 m-auto py-[140px]">
+          <h2 class="font-semibold text-accent text-4xl">Frequently Asked Questions</h2>
+          <div class="join join-vertical cursor-pointer">
+            <div class="collapse collapse-plus join-item bg-white mt-12">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title font-semibold">Q. What are your delivery hours?</div>
+              <div class="collapse-content text-sm">We deliver from 7.30 am to 11 pm every day. You can choose from available slots to find something that is convenient for you.</div>
+            </div>
+            <div class="collapse collapse-plus join-item bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">Q. What about the prices?</div>
+              <div class="collapse-content text-sm">Our prices are our own but we try our best to offer them to you at or below market prices. Our prices are the same as the local market and we are working hard to get them even lower! If you feel that any product is priced unfairly, please let us know.</div>
+            </div>
+            <div class="collapse collapse-plus join-item bg-white">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">Q. Do you serve my area?</div>
+              <div class="collapse-content text-sm">We are currently serving in three big cities of Bangladesh including Dhaka, Chattogram, Jashore.</div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
-        <h3 class="font-semibold text-2xl">Get Grocery News!</h3>
-        <p>Exclusive training tips, ticks, product deals and more.</p>
-        <input type="email" name="" id="">
-        <button>Subscribe</button>
+        <div class="relative -bottom-56 flex justify-between bg-secondary rounded-3xl w-2/3 m-auto px-28 py-14">
+          <img src="assets/vegetable-busket.png" alt="vegetable-busket">
+          <div class="flex flex-col justify-between text-left py-9">
+            <h3 class="font-semibold text-4xl">Get Grocery News!</h3>
+            <p class="text-xl">Exclusive training tips, ticks, product deals and more.</p>
+            <input class="rounded-lg h-16 p-6" type="email" placeholder="Enter email...">
+            <button class="bg-accent text-white rounded-lg text-lg px-[30px] py-2.5 w-fit">Subscribe</button>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <img src="assets/logo-footer.png" alt="nature's-platter">
-        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
-      </div>
-      <div>
-        <ul>
-          <li>Products</li>
-          <li>Services</li>
-          <li>Contact us</li>
-        </ul>
-      </div>
-      <div>
-        <h6>Follow Us</h6>
+    <footer class="bg-accent">
+      <div class="flex justify-between w-2/3 m-auto pt-[360px] pb-36">
+        <div class="w-1/3">
+          <img src="assets/logo-footer.png" alt="nature's-platter">
+          <p class="text-xl text-white mt-3">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div>
+          <ul class="flex flex-col gap-8 text-white text-xl cursor-pointer">
+            <li>Products</li>
+            <li>Services</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="text-xl text-white">Follow Us</h6>
+          <div class="flex justify-between cursor-pointer">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+          </div>
+        </div>
       </div>
     </footer>
 </body>
